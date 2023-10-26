@@ -1,0 +1,17 @@
+{
+  "routes": [
+    {
+      "route": "/admin",
+      "allowedRoles": ["administrator"]
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": [
+      "/assets/img/*.{png,jpg,gif}",
+      "/assets/svg/*.{svg}",
+      "/fonts/*.{woff,woff2,ttf,eot}",
+      "/img/*.{png,jpg,gif}"
+    ]
+  }
+}
